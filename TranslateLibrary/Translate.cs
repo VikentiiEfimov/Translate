@@ -15,7 +15,7 @@ namespace TranslateLibrary
     public static class Translate
     {
         
-        private const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        public const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         /// <summary>
         /// Переводит число N из системы счисления p в систему счисления q.
@@ -52,7 +52,7 @@ namespace TranslateLibrary
             // Переводим целую часть в десятичную систему счисления
             foreach (char digit in intPart)
             {
-                decimalValue = decimalValue * p + digits.IndexOf(digit); 
+                decimalValue = decimalValue * p + digits.IndexOf(digit);
             }
 
             string result = "";
@@ -100,6 +100,6 @@ namespace TranslateLibrary
             }
 
             return result;
-        }
+        } 
     }
 }

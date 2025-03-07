@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TranslateLibrary\TranslateLibrary.csproj">
+      <Project>{380e0a72-b09d-442a-a375-a4dc0bbdb05e}</Project>
+      <Name>TranslateLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
